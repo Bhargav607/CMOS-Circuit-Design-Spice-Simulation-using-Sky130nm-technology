@@ -461,42 +461,42 @@ In the above equation, it seems when W is constant and L is lowered then Id shou
 ### L5 Labs Sky130 Id-Vgs
 We will now do simulation for lower nodes. Inside day2 design file.</br>
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2e30ad35-dbfe-42e4-a2c6-1c3e3ffd3d8b" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/7ff99d62-f2aa-4051-ab89-fdd6957b1bbd" />
 
-<img width="1915" height="1078" alt="image" src="https://github.com/user-attachments/assets/46853bc0-6ac5-4d4e-8c34-133b54530564" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/186defaf-4efd-4fb7-8bc0-eae28cea8738" />
 
 We can see above, simulation is being done for L=0.15u and W=0.39u.</br>
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/0112c1fb-efa5-4eb2-a5c2-9c34923067ab" />
-<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/05b5bf4a-79e4-4b9e-b92d-938707164205" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/86324146-c031-450c-8549-291730b1524e" />
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3455d86b-dd2b-4b41-aad6-4bee2f683440" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/494be3fa-221f-44ba-80ca-ff0c7b6edfc3" />
 
 The above plot is Id vs Vds for different values of Vgs. We can see for lower values of Vgs it is showing quadratic behaviour and for higher values of Vgs it is showing Linear behaviour. Now if want to see the peak current for Vgs=1.8V, just 'press' left click on mouse at Vgs=1.8V.</br>
 
-<img width="290" height="22" alt="image" src="https://github.com/user-attachments/assets/83d91519-32f9-4d17-b88a-379635529e9a" />
+<img width="310" height="106" alt="Image" src="https://github.com/user-attachments/assets/4addcabd-97f3-4906-b17b-328877b0bb21" />
 So we can see it is approximately 198uA.</br>
 
 **Now let us observe Id vs Vgs**
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/38b27e55-94b1-4190-9191-e022f3e3d548" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/af6e3b55-d182-45ab-b1cb-d2a8d7ceb647" />
 
 Here again we are taking values for L=0.15u and W=0.39u, Keeping Vds constant at 1.8V and sweeping Vgs from 0 to 1.8V with step of 0.1V.</br>
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2c4fd12f-4995-43bc-b1bd-faaa1d6291a7" />
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/17f7032a-f654-4c22-81e9-acbc1cbe368f" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/6a735afb-9cec-4b59-ab26-a68afcd52226" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/1e62fa1a-870c-4dae-9738-fbd9e613a46d" />
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/b490e2f2-76aa-49f1-b37c-e986cb3e4126" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/ef3102ea-ba16-4ac9-843e-ac73332af8a7" />
 In the above graph we can see that, due to short channel effect we are seeing a linear behaviour for higher Vgs and Vds being constant.</br>
 
 ### L6 Labs Sky130 Vt
 Now we will calculate Threshold Voltage Vt for Id vs Vgs curve.
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/1e4b97da-884d-4447-b8ae-4d83ff1aef33" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/8d49d3d1-79d1-4c92-b0ec-87849de28214" />
 
 In the curve we can see that Vt is the value when current increases drastically for small change in Vgs. To calculate we will draw tangent on the curve and see where it touches.</br>
 
-<img width="292" height="30" alt="image" src="https://github.com/user-attachments/assets/dfd6b8ca-308f-425e-97d0-58cb1799fca4" />
+<img width="302" height="51" alt="Image" src="https://github.com/user-attachments/assets/ca01512a-715b-4772-ad59-aacec7c17174" />
 
-It comes at around 0.76V.
+It comes at around 0.75V.
 
 ## CMOS voltage transfer characteristics (VTC)
 
@@ -641,43 +641,44 @@ If we observe the previous graph is left shifted slightly. This happens because 
 ### L3 Labs Sky130 SPICE simulation for CMOS
 We now get the VTC characteristics
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3e6c8b58-05e8-4c43-94a8-e1f8323a9e00" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/854eb3e3-126c-4e96-a2f9-ec01fd75b493" />
 We are using both pfet and nfet for CMOS inverter. We can see that W/L ratio of pmos is 2.33 times greater than that of nmos. And we will be sweeping Vin from 0 to 1.8V with step isze of 0.01V and plotting the Vout.</br>
 
-<img width="1913" height="1078" alt="image" src="https://github.com/user-attachments/assets/a9aa02e7-a3f0-4485-9b07-129fd8260d03" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/549b1602-d49e-4ddc-9709-b723fcb4082f" />
 To get the plot type `ngspice` and `plot out vs in`.
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2b2cd0ab-86fa-43cb-aae5-6192e7c52c10" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/bd479186-417c-4264-af7d-5345a350a596" />
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e71074c8-50af-44c1-9316-790007b9394e" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/f3e872a0-5cb7-43ac-97cf-e074b8878e24" />
 
 Now we need to know the Switching Threshold from this graph, it is the point when Vin=Vout.</br>
 To zoom in the curve; press righ mouse button + hold it.</br>
 
-<img width="1918" height="1076" alt="image" src="https://github.com/user-attachments/assets/f23c8b99-6ef4-49e3-860b-2e0c324f4320" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/304f8c7b-14d1-493e-95ed-d48792e73eec" />
 So switching threshold for W/L=2.3 is around 0.876V</br>
 
-<img width="280" height="30" alt="image" src="https://github.com/user-attachments/assets/816fa465-de21-4d8d-bff4-fb79ab059723" />
+<img width="302" height="51" alt="Image" src="https://github.com/user-attachments/assets/8d4d61fb-efb4-4b27-b018-f1d906e4555d" />
 
 We will now see the transient analysis:</br>
 For that we will go inside the tansient SPICE file for day3</br>
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/fe3e84fa-8511-4f02-917e-570de93216d9" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/d547618f-c9fe-4132-901c-9034677e40a0" />
 We can see that it is for typical corner as before and the W/L is also same. But now we taking transient pulse from 0v to 1V with shift of 0 with rise time and fall time being 0.1ns and 0.1ns respectively, pulse width of 2ns and total time period of 4ns. Let us run this.</br>
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/93a365ad-7eff-4172-921b-d0301c2978f7" />
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/786bea0f-e506-4475-b099-575545bd0685" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/f6abf1a6-7ea5-4c65-bf0a-200b20d33dbb" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/0ef0308d-958f-43c1-a506-fff24ae68d58" />
 
 So for rise delay and fall delay, we need to consider 50% of output curve i.e. at 0.9V; out-in.</br>
-<img width="305" height="67" alt="image" src="https://github.com/user-attachments/assets/9e8f888e-74a1-465c-8cb5-71ee3302b0f7" />
+<img width="305" height="69" alt="Image" src="https://github.com/user-attachments/assets/c45275cf-be29-4074-ad9d-9c36cf09d616" />
 
-Therefore **Rise delay = 2.482ns-2.15ns = 0.333ns**
+Therefore **Rise delay = 2.484ns-2.171ns = 0.313ns**
 
 For fall delay, consider while falling.</br>
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4c675f5c-cef5-4f78-8692-67398bbf94eb" />
-<img width="315" height="71" alt="image" src="https://github.com/user-attachments/assets/73197af2-d7b5-4545-a2b6-aebde88f7f20" />
-Therefore **Fall Delay = 4.334ns-4.050ns = 0.285ns**
+<img width="305" height="69" alt="Image" src="https://github.com/user-attachments/assets/3b0b71fa-f6ce-4a08-b5f3-1d4e3c8d65b1" />
+
+Therefore **Fall Delay = 4.333ns-4.050ns = 0.284ns**
 
 ## Static behaviour evaluation-CMOS inverter robustness-Switching Threshold
 
@@ -816,19 +817,19 @@ Also we come to know the ranges for "Digital design" and "Analog design" in the 
 ### L5 Sky130 Noise margin labs
 We will now plot Noise margins
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/af440785-3266-41ad-97ed-dd819824aaa5" />
-<img width="1918" height="1077" alt="image" src="https://github.com/user-attachments/assets/58aba228-174c-453c-90df-e81aeab49d53" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/a9736caa-8508-4460-b281-95c5e3f8e884" />
+<img width="786" height="533" alt="Image" src="https://github.com/user-attachments/assets/8d4db63b-bbef-4b68-9301-9bf916ce86d8" />
 
 We are taking the W/L ratios of PMOS to NMOS as 2.77 and sweeping the Vin from 0 to 1.8V with stepsize of 0.01V.
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7e8e9139-43f7-4aa7-9737-9e7e378d443b" />
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/bc470f7d-f493-47c5-89e9-dfbad4e053bb" />
-<img width="278" height="60" alt="image" src="https://github.com/user-attachments/assets/501565f8-b944-4af8-854b-a9f1eded062b" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/3c254b16-7d8d-45e5-801a-c69f4be94012" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/1243c8fc-a832-46d4-9017-c339f3208307" />
+<img width="305" height="69" alt="Image" src="https://github.com/user-attachments/assets/baa075bc-2aa3-444a-9078-3beeedd33593" />
 
 We will take the point where the slope is -1 ; x axis will give VIL and VIH, whereas y axis will give VOH and VOL.
 
-**Noise margin NH = VOH - VIH = 1.70952-0.98778 = 0.72** </br>
-**Noise margin NL = VIL - VOL = 0.7733-0.09523 = 0.67807** </br>
+**Noise margin NH = VOH - VIH = 1.69275-0.98 = 0.71275** </br>
+**Noise margin NL = VIL - VOL = 0.78181-0.10724 = 0.67457** </br>
 
 # NgspiceSky130-Day5-CMOS power supply and device variation robustness evaluation
 
@@ -871,25 +872,25 @@ There is energy lowering for low supply voltage.
 ### L3 Sky130 Supply variation Labs
 We will calculate the supply variation.
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/94a3c1ba-3139-4838-b302-2320ce3f643e" />
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/56419121-44bb-4f73-9084-06b1503b6544" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/eeb505a8-7ce5-4cc8-80ae-511722652ec5" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/3ed38dde-b9bc-4f26-9dd7-28ca388c6221" />
 
 The initial supply voltage is 1.8V and we are reducing it with the step of 0.2V, so there will be 6 iterations.
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/af291d32-1484-4d6b-8291-dabc5b70df65" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/fa40bee9-5ada-421b-959c-53803b0fa996" />
 We will calculte the Gain: </br>
 
 * **Vdd=1.8V** </br>
 
-  <img width="292" height="61" alt="image" src="https://github.com/user-attachments/assets/0f2c56cc-5fb4-4c1e-9e49-0e7ee75b964b" />
+  <img width="305" height="69" alt="Image" src="https://github.com/user-attachments/assets/f8e8b0a8-3aae-4837-9aa4-78ef9efe8d1a" />
 
-  |Gain| = 7.6229 </br>
+  |Gain| = 7.7422 </br>
 
 * **Vdd=0.8V**
 
-  <img width="267" height="52" alt="image" src="https://github.com/user-attachments/assets/112695f4-b69a-4c76-bd41-a066a08ac6b7" />
+  <img width="305" height="69" alt="Image" src="https://github.com/user-attachments/assets/2549924e-b8b7-43f9-b27c-e3314cc9f17e" />
 
-  |Gain| = 9.3844 </br>
+  |Gain| = 8.7788 </br>
 
 ## Static behaviour evaluation-CMOS inverter robustness-Device variation
 
@@ -954,285 +955,10 @@ We will draw some conclusions from the characteristics we got.
 ### L5 Sky130 device variations labs
 We will now do the SPICE simulations for the device variations</br>
 
-<img width="1912" height="1079" alt="Screenshot 2025-10-03 231604" src="https://github.com/user-attachments/assets/5b26708d-6351-4aa8-b2d2-758a174a6f8b" />
-<img width="1919" height="1079" alt="Screenshot 2025-10-03 231715" src="https://github.com/user-attachments/assets/518ac3f8-9460-49ab-943e-e09cc37ca4ac" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/cbf0a475-6b72-4cf4-a674-8868d4e64d97" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/b0ee153b-72ab-430f-b81c-f093686e0861" />
 
 We can see that the width of PMOS is quite large than that of NMOS. SO it is clearly strong PMOS and weak NMOS case. The Vm will be right shifted.</br>
 
-<img width="1919" height="1079" alt="Screenshot 2025-10-03 231914" src="https://github.com/user-attachments/assets/ef15e759-7036-445a-b5b1-53b0df38050a" />
-
-<img width="1919" height="1079" alt="Screenshot 2025-10-03 232247" src="https://github.com/user-attachments/assets/841f9eea-395a-4213-93c5-8e5a06de59f0" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/988b574c-e2c0-4f9c-bd18-ce82c3ffffd2" />
+<img width="1210" height="773" alt="Image" src="https://github.com/user-attachments/assets/2965ee6d-6f38-4b31-8661-6eab9238a113" />
